@@ -1,0 +1,131 @@
+body {
+  background-image: url("/public/image/animegirl.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* .div1 {
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+} */
+
+.loginAdminButton {
+  border-radius: 8px;
+  height: 30px;
+  background-color: rgb(210, 65, 246);
+  color: black;
+  border: 0;
+}
+
+.loginAdminButton:hover {
+  cursor: pointer;
+}
+
+.divmain1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 300px;
+  flex-direction: column;
+  /* background-color: white; */
+  width: 400px;
+  box-shadow: 5px 5px 5px rgb(210, 65, 246);
+  border-radius: 8px;
+  /* background-image: url("/download1.jpg"); */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+}
+.divmain1_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  height: 300px;
+  flex-direction: column;
+  /* background-color: white; */
+  width: 300px;
+  box-shadow: 5px 5px 5px rgb(210, 65, 246);
+  border-radius: 8px;
+}
+
+.h2main {
+  color: rgb(210, 65, 246);
+  filter: drop-shadow(5px 5px 5px blue);
+  cursor: default;
+}
+
+.divmain2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  border-radius: 8px;
+}
+
+.mainLogin2 {
+  display: none;
+}
+
+.divForm1 {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  /* background-color: red; */
+}
+
+.divButtonLoginFrom {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputusername {
+  background-color: rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  border: 1px black solid;
+}
+.inputpassword {
+  background-color: rgba(255, 1, 1, 0);
+  border-radius: 5px;
+  border: 1px black solid;
+  box-shadow: 5px 5px 5px black;
+}
+.h2welcomtopanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+  filter: drop-shadow(5px 5px 5px black);
+}
+.h2welcomtopanel2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  filter: drop-shadow(5px 5px 5px white);
+}
+
+.bancupMain {
+  display: none;
+  /* background-color: red; */
+}
+
+.UNbancupMain {
+  display: none;
+  /* background-color: red; */
+}

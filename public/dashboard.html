@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>PANEL ADMIN</title>
+</head>
+
+<body>
+  <main class="mainLogin">
+    <h3 class="h2welcomtopanel">Selamat datang di panel database admin</h3>
+    <h4 class="h2welcomtopanel2">
+      Harap berhati hati dalam menggunakan database
+    </h4>
+    <hr />
+    <button class="BanUcpButton">BAN UCP</button>
+    <button class="UNBanUcpButton">UNBAN UCP</button>
+    <button class="SETSTATS">SET STATS</button>
+    <button class="">OFF JAIL</button>
+    <button class="">CEK BAGASI</button>
+  </main>
+  <!-- ban ucp -->
+  <main class="bancupMain">
+    <div>
+      <h1>Ban Player</h1>
+      <form id="banForm" action="./banucpakses.php" method="POST">
+        <div>
+          <label for="nama">Nama UCP</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div>
+          <label for="reason">Reason</label>
+          <input type="text" id="reason" name="reason" required />
+        </div>
+        <div>
+          <button class="submitBanUcp" type="submit">Submit</button>
+        </div>
+      </form>
+      <button class="BackBanUcp" type="">Back</button>
+    </div>
+    <script>
+      document.querySelector(".BackBanUcp").addEventListener("click", function() {
+        const mainLogin = document.querySelector(".mainLogin");
+        // mainLogin.style.display = "block";
+        window.location.href = 'dashboard.html';
+      });
+    </script>
+  </main>
+  <!-- unban ucp -->
+  <main class="UNbancupMain">
+    <div>
+      <h1>UNBAN PLAYER</h1>
+      <form id="unbanForm" action="./unbanucpakses.php" method="POST">
+        <div>
+          <label for="unbannama">Nama UCP</label>
+          <input type="text" id="unbannama" name="unbannama" required />
+        </div>
+        <div>
+          <label for="unbanreason">Unban Reason</label>
+          <input type="text" id="unbanreason" name="unbanreason" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <button class="BackUnBanUcp" type="">Back</button>
+    </div>
+    <script>
+      document.querySelector(".BackUnBanUcp").addEventListener("click", function() {
+        const mainLogin = document.querySelector(".mainLogin");
+        // mainLogin.style.display = "block";
+        window.location.href = 'dashboard.html';
+      });
+    </script>
+  </main>
+  <!-- setstats -->
+  <main class="SetStatMain" style="display: none;">
+    <div>
+      <h1>SET STATS PLAYER</h1>
+      <form id="unbanForm" action="./setstats.php" method="POST">
+        <div>
+          <label for="setstatsname">Nama IC</label>
+          <input type="text" id="setstatsname" name="setstatsname" required />
+        </div>
+        <div>
+          <label for="statType">Pilih Statistik</label>
+          <select name="statType" id="statType" required>
+            <option value="level">LEVEL</option> <!-- column dan tipe data = "level(int)" -->
+            <option value="Vip">VIP</option> <!-- column dan tipe data = "vip(int)" -->
+            <option value="gold">GOLD</option> <!-- column dan tipe data = "gold(int)" -->
+            <option value="phone">HANDPHONE</option> <!-- column dan tipe data = "phone(int)" -->
+            <option value="gps">GPS</option> <!-- column dan tipe data = "gps(int)" -->
+            <option value="material">MATERIAL</option> <!-- column dan tipe data = "material(int)" -->
+            <option value="component">COMPONENT</option> <!-- column dan tipe data = "component(int)" -->
+            <option value="marijuana">MARIJUANA</option> <!-- column dan tipe data = "marijuana(int)" -->
+            <option value="money">MONEY</option> <!-- column dan tipe data = "money(int)" -->
+            <option value="redmoney">REDMONEY</option> <!-- column dan tipe data = "redmoney(int)" -->
+            <option value="bmoney">BANK MONEY</option> <!-- column dan tipe data = "bmoney(int)" -->
+            <option value="skin">SKIN</option> <!-- column dan tipe data = " skin(int)" -->
+          </select>
+        </div>
+        <div>
+          <label for="statValue">Jumlah</label>
+          <input type="text" id="statValue" name="statValue" required />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <button class="BackSetStats" type="">Back</button>
+    </div>
+    <script>
+      document.querySelector(".BackSetStats").addEventListener("click", function() {
+        const mainLogin = document.querySelector(".mainLogin");
+        // mainLogin.style.display = "block";
+        window.location.href = 'dashboard.html';
+      });
+    </script>
+  </main>
+  <script src="./src/callbackDashBanUcp.js"></script>
+  <script src="./src/callbackDashUNBanUcp.js"></script>
+  <script src="./src/setstats.js"></script>
+</body>
+
+</html>
